@@ -2,15 +2,18 @@ const path = require('path');
 
 module.exports = {
     entry: [
-        path.join(__dirname, './react/index.js')
+        path.join(__dirname, './react/index.tsx')
     ],
+    resolve: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
+    },
     mode: "development",
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.tsx?$/,
                 include: path.resolve(__dirname, "react"),
-                use: 'babel-loader',
+                use: 'ts-loader',
             }
         ]
     },
