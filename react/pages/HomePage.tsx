@@ -7,7 +7,7 @@ const HomePage = () => {
             <div>
                 This is the home page.
             </div>
-            <Link to="/second-page">
+            <Link to="/board-editor">
                 Go to board editor.
             </Link>
         </div>
