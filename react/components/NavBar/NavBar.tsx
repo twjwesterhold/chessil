@@ -2,6 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
+import { Fonts, Colors } from "../../styles";
+
 const NavBar = () => {
   return (
       <StyledNavBar>
@@ -18,20 +20,19 @@ const StyledNavBar = styled.div`
   margin: 0;
   height: 60px;
   width: 100vw;
-  background-color: #002020;
+  background-color: ${Colors.MorningGlory};
 `;
 
 const StyledNavLink = styled(NavLink)`
   margin-left: 65px;
   font-size: 20px;
-  font-family: "Lucida Console", monospace;
   text-decoration: none;
   color: green;
 
   &.active {
     color: blue;
     border-bottom: solid green 2px;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
   }
 `;
 
