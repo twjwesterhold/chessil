@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import HomePage from "./pages/HomePage";
-import BoardEditorPage from "./pages/BoardEditorPage";
-import NavBar from "./components/NavBar";
+import { HomePage } from "./pages";
+import { BoardEditorPage } from "./pages";
+import { NavBar } from "./components";
 
 const App = () => {
     return (
