@@ -1,25 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+
+import { Board } from "../../components"
 
 const BoardEditorPage = () => {
     return (
-        <div>
-            <div>
-                This is the board editor page.
-            </div>
-            <Link to="/">
-                Go to home page.
-            </Link>
-            <StyledDiv>
-                Hello
-            </StyledDiv>
-        </div>
+        <StyledDiv>
+            <Board />
+        </StyledDiv>
     );
 };
 
 const StyledDiv = styled.div`
-  background-color: darksalmon;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 1000px;
   width: 100%;
 `;

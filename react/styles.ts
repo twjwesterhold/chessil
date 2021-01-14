@@ -3,6 +3,16 @@ export const Fonts = {
 };
 
 export const Colors = {
-    Cerulean: "#00A4DB",
-    MorningGlory: "#99D4DD",
+    AppleGreen: "#D5F0E2",
+    Black: "#000000",
+    Bud: "#A6AB9A",
+    Cello: "#204060",
+    Sandal: "#B49272",
+    SilverChalice: "#A0A0A0",
+    StarkWhite: "#E8E0C4",
+    White: "#FFFFFF",
+};
+
+export const Size = {
+    SquareSize: 70,
 };
