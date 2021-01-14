@@ -4,22 +4,34 @@ import styled from "styled-components";
 import { Square } from "../../components";
 import { Colors, Size } from "../../styles";
 
-const Board = () => {
-    const squares = [];
+import { getBoardFromFen } from "../../utils";
 
-    for (let i = 0; i <= 63; i++) {
-        const isLight = Math.floor(i + i/8) % 2;
-        squares.push(
-            <Square isLight={isLight === 0}>
-                P
+interface BoardProps {
+    fen: string;
+}
+
+const Board = ({ fen }: BoardProps) => {
+    const boardArray = getBoardFromFen(fen);
+
+    const squares = (!!boardArray && boardArray.map((el) => {
+        return (
+            <Square
+                isWhite={el.isWhite}
+            >
+                {el.piece}
             </Square>
-        )
-    };
+        );
+    }));
 
     return (
-        <StyledBoard>
-            {squares}
-        </StyledBoard>
+        <div>
+            <StyledBoard>
+                {squares}
+            </StyledBoard>
+            <div>
+                {fen}
+            </div>
+        </div>
     );
 };
 

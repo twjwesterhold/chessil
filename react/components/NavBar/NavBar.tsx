@@ -28,11 +28,11 @@ const StyledNavBar = styled.div`
 const StyledNavLink = styled(NavLink)`
   font-size: 20px;
   text-decoration: none;
-  color: ${Colors.Sandal};
+  color: ${Colors.Nepal};
 
   &.active {
-    color: ${Colors.StarkWhite};
-    border-bottom: solid ${Colors.Sandal} 2px;
+    color: ${Colors.Iron};
+    border-bottom: solid ${Colors.Nepal} 2px;
     padding-bottom: 2px;
   }
 `;

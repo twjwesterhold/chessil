@@ -7,9 +7,9 @@ export const Colors = {
     Black: "#000000",
     Bud: "#A6AB9A",
     Cello: "#204060",
-    Sandal: "#B49272",
+    Nepal: "#7FA1B8",
     SilverChalice: "#A0A0A0",
-    StarkWhite: "#E8E0C4",
+    Iron: "#E2E5E7",
     White: "#FFFFFF",
 };
 

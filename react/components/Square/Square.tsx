@@ -4,7 +4,7 @@ import styled from "styled-components";
 import {Colors, Size} from "../../styles";
 
 interface StyleProps {
-    isLight: boolean,
+    isWhite: boolean,
 }
 
 interface SquareProps extends StyleProps {
@@ -23,13 +23,13 @@ const Square = ({ children, ...props }: SquareProps) => {
 const StyledSquare = styled.button<StyleProps>`
   height: ${Size.SquareSize}px;
   width: ${Size.SquareSize}px;
-  background-color: ${(props) => props.isLight ? Colors.StarkWhite : Colors.Sandal};
+  background-color: ${(props) => props.isWhite ? Colors.Iron : Colors.Nepal};
   border: none;
   outline: none;
   transition-duration: 0.1s;
   
   &:active {
-    background-color: ${(props) => props.isLight ? Colors.AppleGreen : Colors.Bud};
+    background-color: ${(props) => props.isWhite ? Colors.AppleGreen : Colors.Bud};
   }
 `;
 
