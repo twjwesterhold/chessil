@@ -21,18 +21,18 @@ const StyledNavBar = styled.div`
   width: 100vw;
   position: fixed;
   top: 0;
-  background-color: ${Colors.MorningGlory};
-  box-shadow: 0 0 5px black;
+  background-color: ${Colors.Cello};
+  box-shadow: 0 0 5px 2px ${Colors.SilverChalice};
 `;
 
 const StyledNavLink = styled(NavLink)`
   font-size: 20px;
   text-decoration: none;
-  color: green;
+  color: ${Colors.Sandal};
 
   &.active {
-    color: blue;
-    border-bottom: solid green 2px;
+    color: ${Colors.StarkWhite};
+    border-bottom: solid ${Colors.Sandal} 2px;
     padding-bottom: 2px;
   }
 `;
