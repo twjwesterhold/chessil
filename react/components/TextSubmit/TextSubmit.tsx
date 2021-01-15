@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
+import { Button } from "../Button";
 import { Colors, Fonts } from "../../styles";
 
 interface TextSubmitProps {
@@ -25,7 +26,9 @@ const TextSubmit = ({ children, ...props}: TextSubmitProps) => {
                 value={value}
                 onChange={(event) => setValue(event.target.value)}
             />
-            <StyledButton type="submit" value="Load" />
+            <Button onClick={handleSubmit}>
+                Load
+            </Button>
         </StyledForm>
     );
 };
@@ -39,23 +42,19 @@ const StyledForm = styled.form`
 `;
 
 const StyledTextInput = styled.input`
-  height: 25px;
+  height: 35px;
   width: 400px;
-`;
-
-const StyledButton = styled.input`
+  font-size: 15px;
+  background-color: ${Colors.Iron};
   border: none;
+  border-radius: 2px;
   outline: none;
-  cursor: pointer;
-  font-weight: 800;
-  padding: 5px 10px;
-  border-radius: 3px;
-  box-sizing: border-box;
-  margin-left: 10px;
-  background-color: ${Colors.Cinder};
-  color: ${Colors.White};
-  font-family: ${Fonts.Montserrat};
-  box-shadow: 0 1px 5px ${Colors.SilverChalice};
+  box-shadow: 0 1px 2px ${Colors.SilverChalice};
+  transition-duration: 0.2s;
+  
+  &:focus {
+    background-color: ${Colors.PattensBlue};
+  }
 `;
 
 export default TextSubmit;

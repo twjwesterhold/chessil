@@ -5,14 +5,16 @@ export const Fonts = {
 };
 
 export const Colors = {
-    AppleGreen: "#D5F0E2",
+    AppleGreen: "#cec0f5",
     Black: "#000000",
-    Bud: "#A6AB9A",
+    PattensBlue: "#E2F6FF",
     Cinder: "#151321",
-    Nepal: "#7FA1B8",
-    SilverChalice: "#A0A0A0",
     Iron: "#E2E5E7",
+    Nepal: "#7FA1B8",
+    None: "none",
+    SilverChalice: "#A0A0A0",
     White: "#FFFFFF",
+    Test: "#837FB8",
 };
 
 export const Size = {

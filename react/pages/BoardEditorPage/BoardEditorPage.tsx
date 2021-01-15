@@ -1,12 +1,20 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import queryString from "query-string";
+
+import { RouteComponentProps } from "react-router";
 
 import { Board, TextSubmit } from "../../components"
-
 import { isValidFen } from "../../utils";
+import { DEFAULT_FEN } from "../../constants";
 
-const BoardEditorPage = () => {
-    const [fen, setFen] = useState("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR");
+interface BoardEditorPageProps extends RouteComponentProps {
+    fen: string;
+}
+
+const BoardEditorPage = (props: BoardEditorPageProps) => {
+    const fenRedirect = queryString.parse(props.location.search).fen as string;
+    const [fen, setFen] = useState(fenRedirect || DEFAULT_FEN);
 
     const handleSubmit = (value: string) => {
         if (!isValidFen(value)) {
