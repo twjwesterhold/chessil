@@ -24,14 +24,9 @@ const Board = ({ fen }: BoardProps) => {
     }));
 
     return (
-        <div>
-            <StyledBoard>
-                {squares}
-            </StyledBoard>
-            <div>
-                {fen}
-            </div>
-        </div>
+        <StyledBoard>
+            {squares}
+        </StyledBoard>
     );
 };
 

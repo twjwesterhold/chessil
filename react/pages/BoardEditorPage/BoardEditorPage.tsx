@@ -17,16 +17,16 @@ const BoardEditorPage = () => {
     }
 
     return (
-        <StyledDiv>
+        <BodyContent>
             <Board fen={fen} />
-            <TextSubmit onSubmit={handleSubmit}>
+            <TextSubmit onSubmit={handleSubmit} value={fen}>
                 FEN:&nbsp;&nbsp;
             </TextSubmit>
-        </StyledDiv>
+        </BodyContent>
     );
 };
 
-const StyledDiv = styled.div`
+const BodyContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
