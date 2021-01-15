@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 import { Button } from "../Button";
-import { Colors, Fonts } from "../../styles";
+import { Colors } from "../../styles";
 
 interface TextSubmitProps {
     children?: React.ReactNode;

@@ -29,7 +29,7 @@ const StyledSquare = styled.button<StyleProps>`
   transition-duration: 0.1s;
   
   &:active {
-    background-color: ${(props) => props.isWhite ? Colors.AppleGreen : Colors.Test};
+    background-color: ${(props) => props.isWhite ? Colors.MoonRaker : Colors.WildBlueYonder};
   }
 `;
 

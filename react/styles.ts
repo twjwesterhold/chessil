@@ -5,7 +5,7 @@ export const Fonts = {
 };
 
 export const Colors = {
-    AppleGreen: "#cec0f5",
+    MoonRaker: "#CEC0F5",
     Black: "#000000",
     PattensBlue: "#E2F6FF",
     Cinder: "#151321",
@@ -14,7 +14,7 @@ export const Colors = {
     None: "none",
     SilverChalice: "#A0A0A0",
     White: "#FFFFFF",
-    Test: "#837FB8",
+    WildBlueYonder: "#837FB8",
 };
 
 export const Size = {
